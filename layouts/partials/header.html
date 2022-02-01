@@ -1,0 +1,25 @@
+<div class="row navigation">
+  <div class="col-4">
+    <ul>
+      <li><a href="/">Головна</a></li>
+      {{ range .Site.Taxonomies.tags.menu1 }}
+        <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="col-4">
+    <ul>
+      {{ range .Site.Taxonomies.tags.menu2 }}
+        <li><a href="{{ .Page.URL }}">{{ .Page.Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  <div class="col-4">
+    <ul>
+      <li><a href="https://t.me/+MHzUj_HEp5ExYjRi">Telegram</a></li>
+      <li><a href="">Twitter</a></li>
+      <li><a href="https://github.com/alarm-org-ua">GitHub</a></li>
+      <li><a href="mailto:contact@alarm.org.ua">E-mail</a></li>
+    </ul>
+  </div>
+</div>
